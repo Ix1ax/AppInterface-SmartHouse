@@ -1,6 +1,6 @@
 <b>Добро пожаловать в Smart Home Hub!</b>
 
-<img src="file:///D:/%D0%BA%D0%BE%D0%B4%D1%8B/logoWithBg.svg" alt="Smart Home Hub Logo" align="right">
+<img src="file:///D:/%D0%BA%D0%BE%D0%B4%D1%8B/logoWithBg.svg" alt="file:///D:/%D0%BA%D0%BE%D0%B4%D1%8B/logoWithBg.svg" align="right">
 
 SMART HOME
 =================

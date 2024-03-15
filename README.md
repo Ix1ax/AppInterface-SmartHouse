@@ -1,6 +1,6 @@
 <b>Добро пожаловать в Smart Home Hub!</b>
 
-<img src="https://github.com/Ix1ax/AppInterface-SmartHouse/blob/main/app/src/main/res/drawable/logowithbg.xml" alt="SmartOrbit" align="right">
+<img src="https://github.com/Ix1ax/AppInterface-SmartHouse/blob/main/app/src/main/res/drawable/backgroundvacuum.png" alt="SmartOrbit" align="right">
 
 SMART HOME
 =================

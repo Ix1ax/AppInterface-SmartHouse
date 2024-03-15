@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerStyle" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="YellowTimePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/lamp</item>
+    </style>
+
+    <style name="BlackTimePickerDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/yellow</item>
+    </style>
+
+    <style name="BlackTimePickerDialogButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@null</item>
+    </style>
+
+
+</resources>

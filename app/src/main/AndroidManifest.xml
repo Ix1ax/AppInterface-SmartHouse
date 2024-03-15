@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smart"
+        tools:targetApi="31">
+        <activity
+            android:name=".restart_app_page"
+            android:exported="false" />
+        <activity
+            android:name=".first_loading_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity_fridge_recype"
+            android:exported="false" />
+        <activity
+            android:name=".map_device"
+            android:exported="false" />
+        <activity
+            android:name=".scaning_screen"
+            android:exported="false" />
+        <activity
+            android:name=".activity_alarmsystem_device"
+            android:exported="false" />
+        <activity
+            android:name=".activity_multicooker_device"
+            android:exported="false" />
+        <activity
+            android:name=".activity_vacuum_cleaner_device"
+            android:exported="false" />
+        <activity
+            android:name=".activity_teapot_device"
+            android:exported="false" />
+        <activity
+            android:name=".activity_vacuum_cleaner"
+            android:exported="false" />
+        <activity
+            android:name=".activity_profile"
+            android:exported="false" />
+        <activity
+            android:name=".LicensePage"
+            android:exported="false" />
+        <activity
+            android:name=".activity_enter_password_page"
+            android:exported="false" />
+        <activity
+            android:name=".activity_enter_page"
+            android:exported="true" />
+        <activity
+            android:name=".activity_fridge_device"
+            android:exported="false" />
+        <activity
+            android:name=".activity_lamp_device"
+            android:exported="false" />
+        <activity
+            android:name=".conditionerDevice"
+            android:exported="false" />
+        <activity
+            android:name=".MainHelp"
+            android:exported="false" />
+        <activity
+            android:name=".addDevice"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

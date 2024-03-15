@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+        <solid android:color="#00FF00"/> <!-- обводка зеленого цвета -->
+        <stroke android:width="2dp" android:color="#000000"/> <!-- черная граница -->
+    </shape></item>
+    <item android:state_selected="true"><shape android:shape="rectangle">
+        <solid android:color="#00FF00"/> <!-- обводка зеленого цвета -->
+        <stroke android:width="2dp" android:color="#000000"/> <!-- черная граница -->
+    </shape></item>
+    <item><shape android:shape="rectangle">
+        <solid android:color="#FFFFFF"/> <!-- цвет по умолчанию -->
+        <stroke android:width="2dp" android:color="#000000"/> <!-- черная граница -->
+    </shape></item>
+</selector>

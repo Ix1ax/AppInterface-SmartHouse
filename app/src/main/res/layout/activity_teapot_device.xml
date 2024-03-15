@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_teapot_device">
+
+    <!--Фон-->
+
+    <ImageView
+        android:id="@+id/rectangl1"
+        android:layout_width="481dp"
+        android:layout_height="756dp"
+        android:layout_marginStart="-350dp"
+        android:layout_marginEnd="411dp"
+        android:rotation="-168"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:srcCompat="@drawable/backgroundteapot" />
+
+    <ImageView
+        android:id="@+id/rectangl2"
+        android:layout_width="457dp"
+        android:layout_height="651dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="-360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/backgroundteapot" />
+
+    <ImageView
+        android:id="@+id/rectangl3"
+        android:layout_width="259dp"
+        android:layout_height="344dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="600dp"
+        android:rotation="-168"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundteapot" />
+
+    <!--Конец фона-->
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teaporbanner" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="DeviceBackButton"
+        android:onClick="pageMainActivity"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/deviceback"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="goToMap"
+        android:onClick="goToMap"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mapback"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Начинаются режимы -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="290dp"
+        android:contentDescription="Режимы"
+        android:fontFamily="@font/montserrat"
+        android:text="Режимы:"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-300dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="automode"
+        android:onClick="blackt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/blacktea"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="hotmode"
+        android:onClick="greent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/greentea" />
+
+    <ImageView
+        android:id="@+id/ulun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="coldmode"
+        android:onClick="ulunt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/oolon"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/matcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="600dp"
+        android:contentDescription="drymode"
+        android:onClick="matchat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/matcha" />
+
+    <Switch
+        android:id="@+id/idSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="275dp"
+        android:onClick="onSwitchClick"
+        android:scaleX="1.2"
+        android:scaleY="0.6"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/bg_track"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+
+    <ImageView
+        android:id="@+id/onemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:contentDescription="hotmode"
+        android:onClick="onemode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSwitch"
+        app:srcCompat="@drawable/heating" />
+
+    <ImageView
+        android:id="@+id/twomode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="coldmode"
+        android:onClick="twomode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSwitch"
+        app:srcCompat="@drawable/boiling"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/powerTexts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginBottom="425dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSwitch"
+        tools:text="0°" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="299dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="200dp"
+        android:max="100"
+        android:maxHeight="22dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_drawable1"
+        android:progressTint="@color/teapot"
+        android:rotation="270"
+        android:thumb="@drawable/thumb_seek1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/idSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

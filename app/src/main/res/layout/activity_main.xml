@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainByColor"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:background="@color/asideBgColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/helpButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-160dp"
+            android:contentDescription="helpButton"
+            android:onClick="pageHelpActivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/helpbutton" />
+
+        <ImageView
+            android:id="@+id/mainButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="335dp"
+            android:contentDescription="mainButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mainbutton" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="goToProfile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logonobg" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="60dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="-15dp"
+            android:contentDescription="goToProfile"
+            android:onClick="goToProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatarlogo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/logoOneText"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="600dp"
+        android:gravity="center"
+        android:text="@string/logoNameOne"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:fontFamily="@font/montserrat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/logoTextTwo"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="600dp"
+        android:gravity="center"
+        android:text="@string/logoNameTwo"
+        android:textColor="@color/logoTextTwoColor"
+        android:textSize="40sp"
+        app:fontFamily="@font/montserrat_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logoOneText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/greetingUser"
+        android:layout_width="240dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="95dp"
+        android:gravity="center"
+        android:text="@string/greeting"
+        android:textColor="@color/logoTextTwoColor"
+        android:textSize="15sp"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/logoOneText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/selectingDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="@string/selectDevice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/montserrat_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingUser" />
+
+    <ImageView
+        android:id="@+id/addDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="addDevice"
+        android:onClick="addDeviceActivity"
+        android:src="@drawable/addevice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="110dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never">
+
+            <ImageView
+                android:id="@+id/condei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="Condei"
+                android:elevation="0dp"
+                android:onClick="goToCond"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/condeiframe" />
+
+            <ImageView
+                android:id="@+id/lamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="Condei"
+                android:onClick="goToLamp"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/lampframe" />
+
+            <ImageView
+                android:id="@+id/fridge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="Condei"
+                android:onClick="goToFridge"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/fridgeframe" />
+
+            <ImageView
+                android:id="@+id/vacuumCleaner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="VacuumCleaner"
+                android:elevation="0dp"
+                android:onClick="goToVacuumCleaner"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/vacumcleanerframe" />
+
+            <ImageView
+                android:id="@+id/teapot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="teapot"
+                android:elevation="0dp"
+                android:onClick="goToTeapot"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/teapotframe" />
+
+            <ImageView
+                android:id="@+id/multicooker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="multicooker"
+                android:elevation="0dp"
+                android:onClick="goToMulticooker"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/multicookerframe" />
+
+            <ImageView
+                android:id="@+id/alarmsystem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:contentDescription="alarm system"
+                android:elevation="0dp"
+                android:onClick="goToAlarmSystem"
+                android:stateListAnimator="@null"
+                app:srcCompat="@drawable/alarmsystemframe" />
+
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="MapDevices"
+        android:onClick="goToMap"
+        app:layout_constraintBottom_toTopOf="@+id/selectingDevices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/greetingUser"
+        app:srcCompat="@drawable/mapbutton"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

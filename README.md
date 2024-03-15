@@ -1,7 +1,5 @@
 <b>Интерфейс мобильного приложения Умный дом!</b>
-<p align="right">
-  <img src="https://github.com/Ix1ax/AppInterface-SmartHouse/assets/103361737/238f307e-a6de-43f9-8e1e-7d55a9ff2179">
-</p>
+<span align = "right> <img src="https://github.com/Ix1ax/AppInterface-SmartHouse/assets/103361737/238f307e-a6de-43f9-8e1e-7d55a9ff2179"> </span>
 
 SMART ORBIT
 =================

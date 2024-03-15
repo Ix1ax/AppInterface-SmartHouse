@@ -1,6 +1,6 @@
 <b>Интерфейс мобильного приложения Умный дом!</b>
 
-<p right= 0 display = "relative">
+<p right= 0 display = "absolute">
   <img src="https://github.com/Ix1ax/AppInterface-SmartHouse/assets/103361737/238f307e-a6de-43f9-8e1e-7d55a9ff2179">
 </p>
 
